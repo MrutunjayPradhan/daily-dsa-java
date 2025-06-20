@@ -1,0 +1,8 @@
+# Java files - Always use LF (Unix-style)
+*.java text eol=lf
+
+# Markdown files (like README, notes)
+*.md text eol=lf
+
+# Optional: treat all text files with consistent LF
+* text=auto eol=lf
