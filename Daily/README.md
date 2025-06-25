@@ -47,7 +47,18 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 ---
 
-### 📈 Progress Summary (Day 4 - 23/06/2025)
+### 📅 24/06/2025 — [2200. Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- For each index `i`, check the window `[i - k, i + k]`
+- If any index `j` within the window contains the `key`, add `i` to the result
+- Use `lastAdded` to avoid adding duplicates
+- Efficiently skips extra work once match is found
+
+---
+
+### 📈 Progress Summary (Day 5 - 24/06/2025)
 
 | Date       | Problem ID | Title                                             | Level   | Status |
 |------------|------------|---------------------------------------------------|---------|--------|
@@ -55,7 +66,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 21/06/2025 | 3085       | Minimum Deletions to Make String K-Special       | Medium  | ✅      |
 | 22/06/2025 | 2138       | Divide a String Into Groups of Size k            | Easy    | ✅      |
 | 23/06/2025 | 2081       | Sum of k-Mirror Numbers                          | Hard    | ✅      |
+| 24/06/2025 | 2200       | Find All K-Distant Indices in an Array           | Easy    | ✅      |
 
 ---
 
-✅ Keep checking in daily for new updates and consistent documentation!
+✅ Stay consistent. Daily problems → Daily growth!
