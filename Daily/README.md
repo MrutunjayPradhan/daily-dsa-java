@@ -57,16 +57,31 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 - Efficiently skips extra work once match is found
 
 ---
+### 📅 27/06/2025 — [2014. Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/)
+**Level**: Hard  
+**Language**: Java  
+**Approach**:
+- Count frequency of each character in the string
+- Keep only characters that appear at least `k` times as candidates
+- Use BFS to try all subsequences built from candidate characters
+- Check whether a candidate repeats at least `k` times as a subsequence
+- Always update result if a longer or lexicographically larger subsequence is found
+
+**Time Complexity**: Exponential in the worst case (BFS of all subsequences)  
+**Space Complexity**: Potentially exponential due to BFS queue
+---
 
 ### 📈 Progress Summary (Day 5 - 24/06/2025)
 
-| Date       | Problem ID | Title                                             | Level   | Status |
-|------------|------------|---------------------------------------------------|---------|--------|
+| Date       | Problem ID | Title                                            | Level   | Status  |
+|------------|------------|--------------------------------------------------|---------|---------|
 | 20/06/2025 | 3084       | Maximum Manhattan Distance After K Changes       | Medium  | ✅      |
 | 21/06/2025 | 3085       | Minimum Deletions to Make String K-Special       | Medium  | ✅      |
 | 22/06/2025 | 2138       | Divide a String Into Groups of Size k            | Easy    | ✅      |
 | 23/06/2025 | 2081       | Sum of k-Mirror Numbers                          | Hard    | ✅      |
 | 24/06/2025 | 2200       | Find All K-Distant Indices in an Array           | Easy    | ✅      |
+| 27/06/2025 | 2014       | Longest Subsequence Repeated k Times             | Hard    | ✅      |
+
 
 ---
 
