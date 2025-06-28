@@ -70,6 +70,21 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: Exponential in the worst case (BFS of all subsequences)  
 **Space Complexity**: Potentially exponential due to BFS queue
 ---
+### 📅 28/06/2025 — [2099. Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- Sort a copy of the array to determine the k largest values
+- Identify the threshold value (smallest among the top k elements)
+- Count how many times the threshold occurs in the top k
+- Iterate through the original array to preserve relative order:
+  - Add values greater than threshold
+  - For threshold values, only include as many as counted
+- Ensures the subsequence sums up to the largest possible value and preserves order
+
+**Time Complexity**: O(n log n) due to sorting  
+**Space Complexity**: O(n) for extra arrays
+---
 
 ### 📈 Progress Summary (Day 5 - 24/06/2025)
 
@@ -81,6 +96,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 23/06/2025 | 2081       | Sum of k-Mirror Numbers                          | Hard    | ✅      |
 | 24/06/2025 | 2200       | Find All K-Distant Indices in an Array           | Easy    | ✅      |
 | 27/06/2025 | 2014       | Longest Subsequence Repeated k Times             | Hard    | ✅      |
+| 28/06/2025 | 2099       | Find Subsequence of Length K With the Largest Sum| Easy    | ✅      |
+
 
 
 ---
