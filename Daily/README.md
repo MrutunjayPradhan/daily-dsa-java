@@ -85,18 +85,34 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n log n) due to sorting  
 **Space Complexity**: O(n) for extra arrays
 ---
+### 📅 29/06/2025 — [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Sort the array to enable two-pointer traversal
+- For each `left` index, check if the smallest + largest is ≤ target
+- If so, all subsets between `left` and `right` are valid
+- Count these as `2^(right - left)` using precomputed powers of 2
+- Otherwise, decrease `right` to find a smaller max element
+- Keep results modulo \(10^9 + 7\)
 
-### 📈 Progress Summary (Day 5 - 24/06/2025)
+**Time Complexity**: O(n log n) due to sorting  
+**Space Complexity**: O(n) for power array
+---
 
-| Date       | Problem ID | Title                                            | Level   | Status  |
-|------------|------------|--------------------------------------------------|---------|---------|
-| 20/06/2025 | 3084       | Maximum Manhattan Distance After K Changes       | Medium  | ✅      |
-| 21/06/2025 | 3085       | Minimum Deletions to Make String K-Special       | Medium  | ✅      |
-| 22/06/2025 | 2138       | Divide a String Into Groups of Size k            | Easy    | ✅      |
-| 23/06/2025 | 2081       | Sum of k-Mirror Numbers                          | Hard    | ✅      |
-| 24/06/2025 | 2200       | Find All K-Distant Indices in an Array           | Easy    | ✅      |
-| 27/06/2025 | 2014       | Longest Subsequence Repeated k Times             | Hard    | ✅      |
-| 28/06/2025 | 2099       | Find Subsequence of Length K With the Largest Sum| Easy    | ✅      |
+### 📈 Progress Summary (Day 10 - 29/06/2025)
+
+| Date       | Problem ID | Title                                                       | Level   | Status  |
+|------------|------------|-------------------------------------------------------------|---------|---------|
+| 20/06/2025 | 3084       | Maximum Manhattan Distance After K Changes                  | Medium  | ✅      |
+| 21/06/2025 | 3085       | Minimum Deletions to Make String K-Special                  | Medium  | ✅      |
+| 22/06/2025 | 2138       | Divide a String Into Groups of Size k                       | Easy    | ✅      |
+| 23/06/2025 | 2081       | Sum of k-Mirror Numbers                                     | Hard    | ✅      |
+| 24/06/2025 | 2200       | Find All K-Distant Indices in an Array                      | Easy    | ✅      |
+| 27/06/2025 | 2014       | Longest Subsequence Repeated k Times                        | Hard    | ✅      |
+| 28/06/2025 | 2099       | Find Subsequence of Length K With the Largest Sum           | Easy    | ✅      |
+| 29/06/2025 | 1498       | Number of Subsequences That Satisfy the Given Sum Condition | Medium  | ✅      |
+
 
 
 
