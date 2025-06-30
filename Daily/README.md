@@ -100,7 +100,20 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Space Complexity**: O(n) for power array
 ---
 
-### 📈 Progress Summary (Day 10 - 29/06/2025)
+### 📅 30/06/2025 — [594. Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- Count the frequency of each number using a hashmap
+- For each unique number, check if `(num + 1)` exists in the map
+- If it does, the combined count of `num` and `num + 1` forms a harmonious subsequence
+- Keep track of the maximum length found
+
+**Time Complexity**: O(n)  
+**Space Complexity**: O(n)
+---
+
+### 📈 Progress Summary (Day 11 - 30/06/2025)
 
 | Date       | Problem ID | Title                                                       | Level   | Status  |
 |------------|------------|-------------------------------------------------------------|---------|---------|
@@ -112,6 +125,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 27/06/2025 | 2014       | Longest Subsequence Repeated k Times                        | Hard    | ✅      |
 | 28/06/2025 | 2099       | Find Subsequence of Length K With the Largest Sum           | Easy    | ✅      |
 | 29/06/2025 | 1498       | Number of Subsequences That Satisfy the Given Sum Condition | Medium  | ✅      |
+| 30/06/2025 | 594        | Longest Harmonious Subsequence                              | Easy    | ✅      |
+
 
 
 
