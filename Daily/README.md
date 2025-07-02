@@ -112,6 +112,30 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n)  
 **Space Complexity**: O(n)
 ---
+### 📅 01/07/2025 — [3330. Count Possible Strings After Compression](https://leetcode.com/problems/count-possible-strings-after-compression/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- Iterate through the string, comparing each character with its previous one
+- Increment the count every time two consecutive characters are equal
+- The result is the number of ways the compressed string could have originally formed
+
+**Time Complexity**: O(n)  
+**Space Complexity**: O(1)
+---
+### 📅 02/07/2025 — [3333. Count Possible Strings After Compression II](https://leetcode.com/problems/count-possible-strings-after-compression-ii/) (seek help of ai) just want to be honest with my progress .
+**Level**: Hard  
+**Language**: Java  
+**Approach**:
+- First, calculate all consecutive run lengths in the string
+- Compute the initial product of run lengths
+- If the number of runs ≥ k, the total count remains unchanged
+- Otherwise, use DP to determine how many ways runs could have been split into ≤ k segments
+- Subtract invalid splits from the total count, modulo \(10^9 + 7\)
+
+**Time Complexity**: O(k·n)  
+**Space Complexity**: O(k)
+---
 
 ### 📈 Progress Summary (Day 11 - 30/06/2025)
 
@@ -126,6 +150,9 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 28/06/2025 | 2099       | Find Subsequence of Length K With the Largest Sum           | Easy    | ✅      |
 | 29/06/2025 | 1498       | Number of Subsequences That Satisfy the Given Sum Condition | Medium  | ✅      |
 | 30/06/2025 | 594        | Longest Harmonious Subsequence                              | Easy    | ✅      |
+| 01/07/2025 | 3330       | Count Possible Strings After Compression                    | Easy    | ✅      |
+| 02/07/2025 | 3333       | Count Possible Strings After Compression II                 | Hard    | ✅      |
+
 
 
 
