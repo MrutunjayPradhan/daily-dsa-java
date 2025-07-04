@@ -148,8 +148,19 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(log k)  
 **Space Complexity**: O(1)
 ---
+### 📅 04/07/2025 — [3307. Find the K-th Character in String Game II](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Decrement `k` to 0-based index
+- Traverse the bits of `k` and for every bit set to 1, accumulate the corresponding `operations[i]`
+- Final character is determined by `'a' + (sum % 26)`
 
-### 📈 Progress Summary (Day 14 - 03/07/2025)
+**Time Complexity**: O(log k)  
+**Space Complexity**: O(1)
+---
+
+### 📈 Progress Summary 
 
 | Date       | Problem ID | Title                                                       | Level   | Status  |
 |------------|------------|-------------------------------------------------------------|---------|---------|
@@ -165,6 +176,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 01/07/2025 | 3330       | Count Possible Strings After Compression                    | Easy    | ✅      |
 | 02/07/2025 | 3333       | Count Possible Strings After Compression II                 | Hard    | ✅      |
 | 03/07/2025 | 3304       | Find the K-th Character in String Game I                    | Easy    | ✅      |
+| 04/07/2025 | 3307       | Find the K-th Character in String Game II                   | Medium  | ✅      |
+
 
 
 
