@@ -159,6 +159,19 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(log k)  
 **Space Complexity**: O(1)
 ---
+### 📅 05/07/2025 — [1394. Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- Count the frequency of each number using a HashMap
+- Iterate through map entries:
+  - If `number == frequency`, it’s a lucky number
+  - Keep track of the largest lucky number found
+- Return the maximum lucky number, or -1 if none exist
+
+**Time Complexity**: O(n)  
+**Space Complexity**: O(n)
+---
 
 ### 📈 Progress Summary 
 
@@ -177,6 +190,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 02/07/2025 | 3333       | Count Possible Strings After Compression II                 | Hard    | ✅      |
 | 03/07/2025 | 3304       | Find the K-th Character in String Game I                    | Easy    | ✅      |
 | 04/07/2025 | 3307       | Find the K-th Character in String Game II                   | Medium  | ✅      |
+| 05/07/2025 | 1394       | Find Lucky Integer in an Array                              | Easy    | ✅      |
+
 
 
 
