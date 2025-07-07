@@ -172,6 +172,34 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n)  
 **Space Complexity**: O(n)
 ---
+### 📅 06/07/2025 — [1865. Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Store `nums1` as-is and maintain a frequency map for `nums2`
+- In `add(index, val)`, update `nums2[index]` and adjust counts in the frequency map
+- In `count(tot)`, for each number `num` in `nums1`, check if `tot - num` exists in the frequency map of `nums2`
+- Accumulate the total count of such pairs
+
+**Time Complexity**:
+- Constructor: O(n)
+- add(): O(1)
+- count(): O(n)
+
+**Space Complexity**: O(n)
+---
+### 📅 07/07/2025 — [1353. Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Sort events by their start day
+- For each day, push events starting that day into a min-heap sorted by end day
+- Remove any events whose end day has already passed
+- Attend one event each day by removing the earliest finishing event from the heap
+
+**Time Complexity**: O(n log n)  
+**Space Complexity**: O(n)
+---
 
 ### 📈 Progress Summary 
 
@@ -191,6 +219,10 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 03/07/2025 | 3304       | Find the K-th Character in String Game I                    | Easy    | ✅      |
 | 04/07/2025 | 3307       | Find the K-th Character in String Game II                   | Medium  | ✅      |
 | 05/07/2025 | 1394       | Find Lucky Integer in an Array                              | Easy    | ✅      |
+| 06/07/2025 | 1865       | Finding Pairs With a Certain Sum                            | Medium  | ✅      |
+| 07/07/2025 | 1353       | Maximum Number of Events That Can Be Attended               | Medium  | ✅      |
+
+
 
 
 
