@@ -201,7 +201,7 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Space Complexity**: O(n)
 ---
 
-### 📈 Progress Summary 
+### 📈 Progress Summary Solved the daly problem will update soon
 
 | Date       | Problem ID | Title                                                       | Level   | Status  |
 |------------|------------|-------------------------------------------------------------|---------|---------|
