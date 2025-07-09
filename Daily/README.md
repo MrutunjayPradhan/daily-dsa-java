@@ -215,9 +215,23 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n log n * k)  
 **Space Complexity**: O(n * k)
 ---
+### 📅 09/07/2025 — [3439. Maximum Free Time after Attending K Events](https://leetcode.com/problems/maximum-free-time-after-attending-k-events/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Maintain cumulative occupied time `t` as events are processed
+- For each window of `k` events:
+  - Calculate free time between end of previous event and start of next
+  - Deduct total time spent in the window
+  - Track maximum free time found
+- Slide the window of size `k` across the events
+
+**Time Complexity**: O(n)  
+**Space Complexity**: O(1)
+---
 
 
-### 📈 Progress Summary Solved the daly problem will update soon
+### 📈 Progress Summary 
 
 | Date       | Problem ID | Title                                                       | Level   | Status  |
 |------------|------------|-------------------------------------------------------------|---------|---------|
@@ -238,6 +252,7 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 06/07/2025 | 1865       | Finding Pairs With a Certain Sum                            | Medium  | ✅      |
 | 07/07/2025 | 1353       | Maximum Number of Events That Can Be Attended               | Medium  | ✅      |
 | 08/07/2025 | 1751       | Maximum Number of Events That Can Be Attended II            | Hard    | ✅      |
+| 09/07/2025 | 3439       | Maximum Free Time after Attending K Events                  | Medium  | ✅      |
 
 
 
