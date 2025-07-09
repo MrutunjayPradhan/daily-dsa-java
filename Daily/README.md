@@ -200,6 +200,22 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n log n)  
 **Space Complexity**: O(n)
 ---
+### 📅 08/07/2025 — [1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)
+**Level**: Hard  
+**Language**: Java  
+**Approach**:
+- Sort events by start time
+- Use DP:
+  - `dp[count][curIndex]` = max value achievable starting at `curIndex` with `count` events left
+- At each event:
+  - Either skip the current event
+  - Or attend it and move to the next non-overlapping event found via binary search
+- Binary search (`bisectRight`) finds the next event whose start time > current event’s end
+
+**Time Complexity**: O(n log n * k)  
+**Space Complexity**: O(n * k)
+---
+
 
 ### 📈 Progress Summary Solved the daly problem will update soon
 
@@ -221,6 +237,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 05/07/2025 | 1394       | Find Lucky Integer in an Array                              | Easy    | ✅      |
 | 06/07/2025 | 1865       | Finding Pairs With a Certain Sum                            | Medium  | ✅      |
 | 07/07/2025 | 1353       | Maximum Number of Events That Can Be Attended               | Medium  | ✅      |
+| 08/07/2025 | 1751       | Maximum Number of Events That Can Be Attended II            | Hard    | ✅      |
+
 
 
 
