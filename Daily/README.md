@@ -229,6 +229,21 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n)  
 **Space Complexity**: O(1)
 ---
+### 📅 10/07/2025 — [3440. Maximum Free Time after Deleting an Event](https://leetcode.com/problems/maximum-free-time-after-deleting-an-event/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Iterate left-to-right and right-to-left:
+  - Track maximum available free time before and after each event
+  - Mark events that can be deleted without reducing surrounding free time
+- For each event:
+  - Compute potential free interval if that event were deleted
+  - Otherwise subtract event duration from free interval
+- Track the maximum free interval obtainable
+
+**Time Complexity**: O(n)  
+**Space Complexity**: O(n)
+---
 
 
 ### 📈 Progress Summary 
@@ -253,6 +268,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 07/07/2025 | 1353       | Maximum Number of Events That Can Be Attended               | Medium  | ✅      |
 | 08/07/2025 | 1751       | Maximum Number of Events That Can Be Attended II            | Hard    | ✅      |
 | 09/07/2025 | 3439       | Maximum Free Time after Attending K Events                  | Medium  | ✅      |
+| 10/07/2025 | 3440       | Maximum Free Time after Deleting an Event                   | Medium  | ✅      |
+
 
 
 
