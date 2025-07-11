@@ -244,7 +244,24 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n)  
 **Space Complexity**: O(n)
 ---
+### 📅 11/07/2025 — [2402. Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Sort all meetings by start time
+- Maintain two priority queues:
+  - `unusedRooms` → rooms free and available immediately
+  - `usedRooms` → rooms currently occupied, ordered by end time
+- For each meeting:
+  - Release rooms whose end time ≤ current meeting’s start
+  - If a room is available, schedule the meeting there
+  - Otherwise, delay the meeting until the next room is free
+- Count the number of meetings per room
+- Return the room used most frequently (smallest index if tie)
 
+**Time Complexity**: O(m log n), where m = number of meetings  
+**Space Complexity**: O(n)
+---
 
 ### 📈 Progress Summary 
 
@@ -269,6 +286,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 08/07/2025 | 1751       | Maximum Number of Events That Can Be Attended II            | Hard    | ✅      |
 | 09/07/2025 | 3439       | Maximum Free Time after Attending K Events                  | Medium  | ✅      |
 | 10/07/2025 | 3440       | Maximum Free Time after Deleting an Event                   | Medium  | ✅      |
+| 11/07/2025 | 2402       | Meeting Rooms III                                           | Hard    | ✅      |
+
 
 
 
