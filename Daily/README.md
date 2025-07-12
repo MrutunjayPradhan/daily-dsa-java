@@ -262,6 +262,25 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(m log n), where m = number of meetings  
 **Space Complexity**: O(n)
 ---
+### 📅 12/07/2025 — [1900. The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/)
+**Level**: Hard  
+**Language**: Java  
+**Approach**:
+- Define DP state `F(n, f, s)` = earliest round where players `f` and `s` meet in a tournament of size `n`
+- Handle symmetry:
+  - `F(n, f, s) = F(n, s, f)`
+  - If `f + s > n + 1` → mirror positions to reduce DP states
+- Split into:
+  - Players on left half
+  - Players on right half
+- Recursively compute for smaller tournaments
+- Track both:
+  - Earliest round
+  - Latest round
+
+**Time Complexity**: Exponential, but acceptable for `n ≤ 29` due to memoization  
+**Space Complexity**: O(n³) DP table
+
 
 ### 📈 Progress Summary 
 
@@ -287,6 +306,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 09/07/2025 | 3439       | Maximum Free Time after Attending K Events                  | Medium  | ✅      |
 | 10/07/2025 | 3440       | Maximum Free Time after Deleting an Event                   | Medium  | ✅      |
 | 11/07/2025 | 2402       | Meeting Rooms III                                           | Hard    | ✅      |
+| 12/07/2025 | 1900       | The Earliest and Latest Rounds Where Players Compete        | Hard    | ✅      |
+
 
 
 
