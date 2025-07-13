@@ -280,7 +280,20 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 **Time Complexity**: Exponential, but acceptable for `n ≤ 29` due to memoization  
 **Space Complexity**: O(n³) DP table
+---
+### 📅 13/07/2025 — [2410. Match Players with Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Sort `players` and `trainers` arrays.
+- Use two pointers:
+  - If current player ≤ current trainer → pair them and advance both.
+  - Else, advance only trainer pointer.
+- Count successful matches.
 
+**Time Complexity**: O(n log n + m log m)  
+**Space Complexity**: O(1)
+---
 
 ### 📈 Progress Summary 
 
@@ -307,6 +320,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 10/07/2025 | 3440       | Maximum Free Time after Deleting an Event                   | Medium  | ✅      |
 | 11/07/2025 | 2402       | Meeting Rooms III                                           | Hard    | ✅      |
 | 12/07/2025 | 1900       | The Earliest and Latest Rounds Where Players Compete        | Hard    | ✅      |
+| 13/07/2025 | 2410       | Match Players with Trainers                                 | Medium  | ✅      |
+
 
 
 
