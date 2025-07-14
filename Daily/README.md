@@ -294,6 +294,19 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n log n + m log m)  
 **Space Complexity**: O(1)
 ---
+### 📅 14/07/2025 — [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- Traverse the linked list from head to tail
+- For each node:
+  - Shift current result left by 1 bit
+  - Add current node value if it’s 1
+- Return the final integer value
+
+**Time Complexity**: O(n) where n is the length of the list  
+**Space Complexity**: O(1)
+---
 
 ### 📈 Progress Summary 
 
@@ -321,6 +334,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 11/07/2025 | 2402       | Meeting Rooms III                                           | Hard    | ✅      |
 | 12/07/2025 | 1900       | The Earliest and Latest Rounds Where Players Compete        | Hard    | ✅      |
 | 13/07/2025 | 2410       | Match Players with Trainers                                 | Medium  | ✅      |
+| 14/07/2025 | 1290       | Convert Binary Number in a Linked List to Integer           | Easy    | ✅      |
+
 
 
 
