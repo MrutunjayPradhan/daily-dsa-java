@@ -307,6 +307,20 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n) where n is the length of the list  
 **Space Complexity**: O(1)
 ---
+### 📅 15/07/2025 — [3136. Valid Word](https://leetcode.com/problems/valid-word/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- Check that the length of the word is at least 3
+- Iterate through each character:
+  - Only letters and digits are allowed
+  - Must contain at least one vowel (a, e, i, o, u)
+  - Must contain at least one consonant
+- Return `true` only if both vowel and consonant exist and no invalid characters found
+
+**Time Complexity**: O(n), where n = length of the string  
+**Space Complexity**: O(1)
+---
 
 ### 📈 Progress Summary 
 
@@ -335,6 +349,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 12/07/2025 | 1900       | The Earliest and Latest Rounds Where Players Compete        | Hard    | ✅      |
 | 13/07/2025 | 2410       | Match Players with Trainers                                 | Medium  | ✅      |
 | 14/07/2025 | 1290       | Convert Binary Number in a Linked List to Integer           | Easy    | ✅      |
+| 15/07/2025 | 3136       | Valid Word                                                  | Easy    | ✅      |
+
 
 
 
