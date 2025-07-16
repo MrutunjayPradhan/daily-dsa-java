@@ -321,7 +321,29 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n), where n = length of the string  
 **Space Complexity**: O(1)
 ---
+### 📅 16/07/2025 — [3201. Maximum Length of Subsequence With Alternating Parity](https://leetcode.com/problems/maximum-length-of-subsequence-with-alternating-parity/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- Track:
+  - `count[0]`: number of even elements
+  - `count[1]`: number of odd elements
+  - `end[0]`: longest alternating subsequence ending in even
+  - `end[1]`: longest alternating subsequence ending in odd
+- At each step:
+  - Extend the alternate parity’s subsequence
+  - Update counts and max length
 
+**Final Return**:
+- Max of:
+  - Longest subsequence with same parity
+  - Longest alternating subsequence
+
+**Time Complexity**: O(n)  
+**Space Complexity**: O(1)
+
+💡 *Previous attempts (commented) included explicit parity tracking and greedy traversal — later optimized with simple counters.*
+---
 ### 📈 Progress Summary 
 
 | Date       | Problem ID | Title                                                       | Level   | Status  |
@@ -350,6 +372,7 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 13/07/2025 | 2410       | Match Players with Trainers                                 | Medium  | ✅      |
 | 14/07/2025 | 1290       | Convert Binary Number in a Linked List to Integer           | Easy    | ✅      |
 | 15/07/2025 | 3136       | Valid Word                                                  | Easy    | ✅      |
+| 16/07/2025 | 3201       | Maximum Length of Subsequence With Alternating Parity       | Easy    | ✅      |
 
 
 
