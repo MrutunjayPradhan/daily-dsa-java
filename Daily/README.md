@@ -344,6 +344,25 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 💡 *Previous attempts (commented) included explicit parity tracking and greedy traversal — later optimized with simple counters.*
 ---
+### 📅 17/07/2025 — [3202. Maximum Length of a Subarray With Bitwise AND Greater Than Zero](https://leetcode.com/problems/maximum-length-of-a-subarray-with-bitwise-and-greater-than-zero/)
+**Level**: Hard  
+**Language**: Java  
+**Approach**:
+- Used a 2D `dp[k][k]` array to track transitions based on modulo values.
+- `num % k` is used to reduce the number space to bounded values for efficient tracking.
+- For each number, update all possible previous states:
+  - `dp[prev][num] = dp[num][prev] + 1`
+- Update the result as the maximum of all `dp[prev][num]` values.
+
+**Final Return**:
+- Maximum length of valid subarray after transformations based on modulo groupings.
+
+**Time Complexity**: O(n * k)  
+**Space Complexity**: O(k²)
+
+💡 *This problem demands clever observation around modulo arithmetic and 2D transitions — tricky but efficient.*
+---
+
 ### 📈 Progress Summary 
 
 | Date       | Problem ID | Title                                                       | Level   | Status  |
@@ -373,6 +392,9 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 14/07/2025 | 1290       | Convert Binary Number in a Linked List to Integer           | Easy    | ✅      |
 | 15/07/2025 | 3136       | Valid Word                                                  | Easy    | ✅      |
 | 16/07/2025 | 3201       | Maximum Length of Subsequence With Alternating Parity       | Easy    | ✅      |
+| 17/07/2025 | 3202       | Maximum Length of a Subarray With Bitwise AND Greater
+                                                                               Than Zero| Hard    | ✅      |
+
 
 
 
