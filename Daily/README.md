@@ -362,6 +362,22 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 💡 *This problem demands clever observation around modulo arithmetic and 2D transitions — tricky but efficient.*
 ---
+### 📅 18/07/2025 — [2163. Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/)
+**Level**: Hard  
+**Language**: Java  
+**Approach**:
+- Divide array into three equal parts (length = 3n).
+- Use a max heap to track minimum sum of the left part (first 2n elements) while removing elements.
+- Use a min heap to track maximum sum of the right part (last 2n elements) similarly.
+- Precompute prefix sums for left part (`part1`) by always removing the largest element.
+- Precompute suffix sums for right part (`part2`) by always removing the smallest element.
+- Calculate minimal difference of `part1[i] - part2[i]` for all valid splits.
+
+**Time Complexity**: O(n log n) due to heap operations  
+**Space Complexity**: O(n)
+
+💡 *Heap usage for prefix and suffix sums makes this an elegant sliding window + priority queue problem.*
+---
 
 ### 📈 Progress Summary 
 
@@ -393,7 +409,10 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 15/07/2025 | 3136       | Valid Word                                                  | Easy    | ✅      |
 | 16/07/2025 | 3201       | Maximum Length of Subsequence With Alternating Parity       | Easy    | ✅      |
 | 17/07/2025 | 3202       | Maximum Length of a Subarray With Bitwise AND Greater
-                                                                               Than Zero| Hard    | ✅      |
+                                                                               Than Zero| Hard    | ✅      | 
+| 18/07/2025 | 2163       | Minimum Difference in Sums After Removal of Elements        | Hard    | ✅      |
+                                                                                    
+                                                                            
 
 
 
