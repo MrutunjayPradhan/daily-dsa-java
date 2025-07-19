@@ -378,6 +378,22 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 💡 *Heap usage for prefix and suffix sums makes this an elegant sliding window + priority queue problem.*
 ---
+### 📅 19/07/2025 — [1233. Remove Sub-Folders from the Filesystem](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**:
+- Used a **`HashSet`** to store all folder paths for O(1) prefix lookup.
+- For each folder:
+  - Iteratively stripped the path backward (`/` split) to check if any **parent folder** exists.
+  - If found, marked it as a **sub-folder**.
+- Only folders with **no valid parent in the set** are added to the result.
+
+**Time Complexity**: O(N·L)  
+(where N = number of folders, L = average length of folder path)  
+**Space Complexity**: O(N)
+
+💡 *Avoids sorting or trie-based approaches by directly checking parent prefixes.*
+---
 
 ### 📈 Progress Summary 
 
@@ -411,6 +427,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 17/07/2025 | 3202       | Maximum Length of a Subarray With Bitwise AND Greater
                                                                                Than Zero| Hard    | ✅      | 
 | 18/07/2025 | 2163       | Minimum Difference in Sums After Removal of Elements        | Hard    | ✅      |
+| 19/07/2025 | 1233       | Remove Sub-Folders from the Filesystem                      | Medium  | ✅      |
+
                                                                                     
                                                                             
 
