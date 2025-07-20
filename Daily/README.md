@@ -394,6 +394,19 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 💡 *Avoids sorting or trie-based approaches by directly checking parent prefixes.*
 ---
+### 📅 20/07/2025 — [1948. Delete Duplicate Folders in the System](https://leetcode.com/problems/delete-duplicate-folders-in-the-system/)
+**Level**: Hard  
+**Language**: Java  
+**Approach**:
+- Build a Trie from folder paths.
+- Serialize each subtree using post-order DFS (e.g., `folder(child1(serial1)child2(serial2))`).
+- Use a `HashMap<String, Integer>` to track frequency of each serialized subtree.
+- In a second DFS, skip adding subtrees that occur more than once (i.e., duplicates).
+- Return non-duplicate paths.
+
+**Time Complexity**: O(n * L log L), where `n` is the number of folders and `L` is average path length (log L from sorting)  
+**Space Complexity**: O(n * L)
+---
 
 ### 📈 Progress Summary 
 
@@ -428,6 +441,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
                                                                                Than Zero| Hard    | ✅      | 
 | 18/07/2025 | 2163       | Minimum Difference in Sums After Removal of Elements        | Hard    | ✅      |
 | 19/07/2025 | 1233       | Remove Sub-Folders from the Filesystem                      | Medium  | ✅      |
+| 20/07/2025 | 1948       | Delete Duplicate Folders in the System                | Hard    | ✅      |
+
 
                                                                                     
                                                                             
