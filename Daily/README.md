@@ -423,6 +423,21 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 💡 *Avoids unnecessary string concatenation. Efficient and clean character scan.*
 ---
+### 📅 22/07/2025 — [1695. Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**: Sliding Window + HashSet  
+- Maintain a window `[j...i]` where all elements are **unique**.
+- Use `HashSet` to track seen elements.
+- Move `i` forward when the current number is not in the set (expand window).
+- If duplicate found, move `j` forward and subtract from `sum` until duplicate is removed (shrink window).
+- Update `maxVal` with current window sum at each step.
+
+**Time Complexity**: O(N)  
+**Space Complexity**: O(N)
+
+💡 *Classic sliding window pattern to handle subarrays with unique elements efficiently.*
+---
 
 ### 📈 Progress Summary 
 
@@ -459,6 +474,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 19/07/2025 | 1233       | Remove Sub-Folders from the Filesystem                      | Medium  | ✅      |
 | 20/07/2025 | 1948       | Delete Duplicate Folders in the System                      | Hard    | ✅      |
 | 21/07/2025 | 1957       | Delete Characters to Make Fancy String                      | Easy    | ✅      |
+| 22/07/2025 | 1695       | Maximum Erasure Value                                       | Medium  | ✅      |
+
 
                                                                                     
                                                                             
