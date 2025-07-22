@@ -407,6 +407,22 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Time Complexity**: O(n * L log L), where `n` is the number of folders and `L` is average path length (log L from sorting)  
 **Space Complexity**: O(n * L)
 ---
+### 📅 21/07/2025 — [1957. Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**:
+- Use a **`StringBuilder`** to construct the result.
+- Always add the first two characters (as they can't form a triple).
+- From the 3rd character onward, check:
+  - If it forms a **triple consecutive repetition** (`aaa`, `bbb`, etc.)
+  - Skip if true, else add to result.
+- Efficiently checks last two characters using `sb.charAt()`.
+
+**Time Complexity**: O(N)  
+**Space Complexity**: O(N)
+
+💡 *Avoids unnecessary string concatenation. Efficient and clean character scan.*
+---
 
 ### 📈 Progress Summary 
 
@@ -441,9 +457,9 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
                                                                                Than Zero| Hard    | ✅      | 
 | 18/07/2025 | 2163       | Minimum Difference in Sums After Removal of Elements        | Hard    | ✅      |
 | 19/07/2025 | 1233       | Remove Sub-Folders from the Filesystem                      | Medium  | ✅      |
-| 20/07/2025 | 1948       | Delete Duplicate Folders in the System                | Hard    | ✅      |
+| 20/07/2025 | 1948       | Delete Duplicate Folders in the System                      | Hard    | ✅      |
+| 21/07/2025 | 1957       | Delete Characters to Make Fancy String                      | Easy    | ✅      |
 
-solve daly problem
                                                                                     
                                                                             
 
