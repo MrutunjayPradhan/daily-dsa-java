@@ -438,6 +438,28 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 💡 *Classic sliding window pattern to handle subarrays with unique elements efficiently.*
 ---
+### 📅 23/07/2025 — [1702. Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change/)
+**Level**: Medium  
+**Language**: Java  
+**Approach**: Greedy + Counting  
+- All operations convert any `00` into `10`.
+- Idea is to push all `0`s towards right greedily.
+- Count number of `0`s after the first `0` (let’s say `zeroCount`).
+- First `0` becomes `1`, then next `zeroCount - 1` `0`s become `1`, and one `0` will remain and get converted to `0` at correct place.
+
+**Steps**:
+- Traverse the string.
+- Count how many `0`s are there and where the first `0` occurs.
+- Construct result string:
+  - From start to `firstZeroIndex`: all `1`s
+  - Then one `0` followed by `zeroCount - 1` `1`s
+  - Remaining suffix (rest of string): all `1`s
+
+**Time Complexity**: O(N)  
+**Space Complexity**: O(N)
+
+💡 *Clever greedy solution based on transformation behavior analysis.*
+---
 
 ### 📈 Progress Summary 
 
@@ -475,6 +497,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 20/07/2025 | 1948       | Delete Duplicate Folders in the System                      | Hard    | ✅      |
 | 21/07/2025 | 1957       | Delete Characters to Make Fancy String                      | Easy    | ✅      |
 | 22/07/2025 | 1695       | Maximum Erasure Value                                       | Medium  | ✅      |
+| 23/07/2025 | 1702       | Maximum Binary String After Change                          | Medium  | ✅      |
+
 
 
                                                                                     
