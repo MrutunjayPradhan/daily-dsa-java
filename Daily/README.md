@@ -460,6 +460,30 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 
 💡 *Clever greedy solution based on transformation behavior analysis.*
 ---
+### 📅 24/07/2025 — [2322. Minimum Score After Removals on a Tree](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/)
+**Level**: Hard  
+**Language**: Java  
+**Approach**: DFS + Subtree XOR + Bit Manipulation  
+- We are given a tree and need to remove two edges to split it into three components.
+- Score = max XOR among the three components - min XOR.
+- Use DFS to compute XOR values of all subtrees from node 0.
+- For each pair of edges, remove them and calculate XORs of resulting components.
+- Try all pairs of edges (at most 4950 since max 100 nodes) and track minimum score.
+
+**Steps**:
+1. Build an adjacency list to represent the tree.
+2. DFS from node 0 to compute the XOR of all nodes in each subtree.
+3. For each pair of edges:
+   - Simulate removal of two edges.
+   - Identify the resulting three components.
+   - Compute XOR for each component.
+4. Calculate score and track the minimum.
+
+**Time Complexity**: O(N²)  
+**Space Complexity**: O(N)
+
+💡 *Intelligent use of tree traversal and bit manipulation to minimize score efficiently.*
+
 
 ### 📈 Progress Summary 
 
@@ -498,6 +522,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 21/07/2025 | 1957       | Delete Characters to Make Fancy String                      | Easy    | ✅      |
 | 22/07/2025 | 1695       | Maximum Erasure Value                                       | Medium  | ✅      |
 | 23/07/2025 | 1702       | Maximum Binary String After Change                          | Medium  | ✅      |
+| 24/07/2025 | 2322       | Minimum Score After Removals on a Tree                      | Hard    | ✅      |
+
 
 
 
