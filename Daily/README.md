@@ -483,7 +483,26 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 **Space Complexity**: O(N)
 
 💡 *Intelligent use of tree traversal and bit manipulation to minimize score efficiently.*
+---
+### 📅 25/07/2025 — [3487. Maximum Sum of Distinct Positive Integers](https://leetcode.com/problems/maximum-sum-of-distinct-positive-integers/)
+**Level**: Easy  
+**Language**: Java  
+**Approach**: Set + Filtering + Sum  
+- Goal: From the array `nums`, return the **sum of all distinct positive integers**.
+- We discard all negative or zero values and duplicates.
+- To efficiently remove duplicates, use a `Set<Integer>`.
+- Then sum all positive values in the set.
 
+**Steps**:
+1. Traverse the array.
+2. Add only `num > 0` to the set.
+3. Sum all integers from the set using stream API.
+
+**Time Complexity**: O(N)  
+**Space Complexity**: O(N) for storing the set
+
+💡 *Simple filtering task where the key is ensuring uniqueness and positivity before summing.*
+---
 
 ### 📈 Progress Summary 
 
@@ -523,6 +542,8 @@ This folder contains my daily LeetCode challenge solutions for June 2025. Each e
 | 22/07/2025 | 1695       | Maximum Erasure Value                                       | Medium  | ✅      |
 | 23/07/2025 | 1702       | Maximum Binary String After Change                          | Medium  | ✅      |
 | 24/07/2025 | 2322       | Minimum Score After Removals on a Tree                      | Hard    | ✅      |
+| 25/07/2025 | 3487       | Maximum Sum of Distinct Positive Integers                   | Easy    | ✅      |
+
 
 
 
