@@ -360,4 +360,120 @@
 💡 *The mask `0x55555555` filters bits at even positions, distinguishing powers of 4 from powers of 2.*
 ---
 
+📅 16/10/2025 — [1323. Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/)  
+**Level**: Easy  
+**Language**: Java  
+**Approach**: Digit Manipulation  
+
+- Goal: Maximize a number composed of digits 6 and 9 by changing **at most one 6 to 9**.  
+- Reverse the number to process digits from left to right.  
+- Change the **first encountered 6** to 9 and reconstruct the result.  
+
+**Steps**:  
+1. Reverse the input number to handle digits from the most significant side.  
+2. Traverse the reversed digits one by one.  
+3. When the first `6` is found, change it to `9`.  
+4. Build the new number by appending digits in order.  
+5. Return the updated number.  
+
+**Time Complexity**: O(d) — where *d* is the number of digits.  
+**Space Complexity**: O(1) — uses constant extra space.  
+
+💡 *Changing the first 6 (from left) to 9 yields the maximum possible number.*
+---
+
+📅 17/10/2025 — [837. New 21 Game](https://leetcode.com/problems/new-21-game/)  
+**Level**: Medium  
+**Language**: Java  
+**Approach**: Dynamic Programming (Sliding Window Probability)  
+
+- Goal: Find the probability that Alice’s total score is ≤ `n` in the "21 game", where she stops drawing once reaching at least `k`.  
+- Use DP where `dp[i]` represents the probability of getting exactly `i` points.  
+- Maintain a running window sum `s` of the last `maxPts` DP states for efficient computation.  
+
+**Steps**:  
+1. Initialize `dp[0] = 1` (starting point with probability 1).  
+2. For each `i` from 1 to `n`, compute `dp[i] = s / maxPts`.  
+3. Update the sliding window:  
+   - Add `dp[i]` to `s` if `i < k` (still allowed to draw).  
+   - Subtract `dp[i - maxPts]` when it moves out of the window.  
+4. After filling DP, sum all probabilities `dp[i]` for `i ∈ [k, n]`.  
+5. Return the total probability.  
+
+**Time Complexity**: O(n) — each state is processed once with O(1) updates.  
+**Space Complexity**: O(n) — DP array of size `n + 1`.  
+
+💡 *Sliding window optimization avoids recomputing sums, keeping the DP efficient for large `n`.*
+
+---
+
+📅 18/10/2025 — [679. 24 Game](https://leetcode.com/problems/24-game/)  
+**Level**: Hard  
+**Language**: Java  
+**Approach**: Backtracking with Floating-Point Precision  
+
+- Goal: Determine if you can reach 24 using four numbers with any combination of `+`, `-`, `*`, `/` and parentheses.  
+- Use DFS to recursively combine numbers two at a time with all possible operations.  
+- Check all operation orders (non-commutative included) and use a tolerance for floating-point comparisons.  
+
+**Steps**:  
+1. Convert input integers to a list of doubles for accurate division handling.  
+2. At each recursion level, pick two numbers `a` and `b`.  
+3. Generate all results of applying `+`, `-`, `*`, `/` on them (skip invalid divisions).  
+4. Recurse with the new reduced list of results.  
+5. If at any stage a single number ≈ 24 (within `1e-6`), return true.  
+
+**Time Complexity**: O(4ⁿ × n²) — exploring all pair and operator combinations.  
+**Space Complexity**: O(n) — recursion depth proportional to number count.  
+
+💡 *Try all arithmetic combinations recursively while managing floating-point precision errors using a small epsilon.*
+---
+
+📅 19/10/2025 — [2348. Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/)  
+**Level**: Medium  
+**Language**: Java  
+**Approach**: Counting Consecutive Zeros  
+
+- Goal: Count all contiguous subarrays consisting entirely of zeros.  
+- Use a running counter to track consecutive zeros and accumulate subarray counts dynamically.  
+
+**Steps**:  
+1. Initialize `count = 0` and `currentZeros = 0`.  
+2. Traverse each element in `nums`:  
+   - If the element is `0`, increment `currentZeros` and add it to `count`.  
+   - If non-zero, reset `currentZeros` to `0`.  
+3. Return the total `count` after traversal.  
+
+**Time Complexity**: O(n) — single pass through the array.  
+**Space Complexity**: O(1) — constant extra variables.  
+
+💡 *Each new zero extends all previous zero subarrays, so add running length each time.*
+
+---
+
+📅 20/10/2025 — [1277. Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones/)  
+**Level**: Medium  
+**Language**: Java  
+**Approach**: Dynamic Programming (Optimized 1D DP)  
+
+- Goal: Count all square submatrices in a binary matrix that contain only 1s.  
+- Use dynamic programming to determine the largest square ending at each cell.  
+- Optimize space to a 1D array while maintaining previous row information.  
+
+**Steps**:  
+1. Initialize a 1D DP array of size `col + 1` to store square sizes.  
+2. Traverse the matrix row by row:  
+   - If `matrix[i][j] == 1`, compute  
+     `dp[j] = 1 + min(prev, dp[j - 1], dp[j])`,  
+     where `prev` represents the top-left cell.  
+   - Add `dp[j]` to the result (counts all smaller squares ending here).  
+   - Update `prev` for the next iteration.  
+3. Reset `dp[j] = 0` if the current cell is 0.  
+4. Return the total `result`.  
+
+**Time Complexity**: O(m × n) — each cell processed once.  
+**Space Complexity**: O(n) — using a single DP array.  
+
+💡 *Each cell’s value represents the size of the largest square ending there — summing them counts all squares efficiently.*
+---
 
