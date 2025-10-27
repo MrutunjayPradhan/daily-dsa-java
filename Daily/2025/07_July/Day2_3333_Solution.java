@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class Solution {
+public class Day2_3333_Solution {
     private static final int MOD = 1_000_000_007;
 
     public int possibleStringCount(String word, int k) {
@@ -62,14 +62,14 @@ class Solution {
     }
 }
 
-public class Day2_3333_Solution {
-    public static void main(String[] args){
+// public class Day2_3333_Solution {
+//     public static void main(String[] args){
 
-        Solution solution = new Solution();
-        String word = "aabbccdd";
-        int k =7;
-        int result =solution.possibleStringCount(word,k);
-        System.out.println(result);//5
-    }
+//         Solution solution = new Solution();
+//         String word = "aabbccdd";
+//         int k =7;
+//         int result =solution.possibleStringCount(word,k);
+//         System.out.println(result);//5
+//     }
     
-}
+// }

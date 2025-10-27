@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Day14_2264_Solution {
     private List<String> sameDigitNumbers = List.of("999", "888", "777", "666", "555", "444", "333", "222", "111", "000");
 

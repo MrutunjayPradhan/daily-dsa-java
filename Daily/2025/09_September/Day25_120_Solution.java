@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Day25_120_Solution {
     public int minimumTotal(List<List<Integer>> tri) {
         for (int i = tri.size() - 2; i >= 0; i--)
