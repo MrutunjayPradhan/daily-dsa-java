@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Day20_757_Solution {
     public int intersectionSizeTwo(int[][] intervals) {
         Arrays.sort(intervals, (a, b) ->
