@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Day13_3453_Solution {
 
     public double separateSquares(int[][] squares) {
